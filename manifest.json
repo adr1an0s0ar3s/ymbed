@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Ymbed",
   "version": "2.0",
-  "description": "A simple firefox extension that when on Youtube, if you click E the current video playing will be fullscreened to the tab it's on.",
+  "description": "A simple firefox extension that when on Youtube, if you click KeyE the current video playing will be fullscreened to the tab it's on.",
 
   "icons": {
     "48": "icons/ymbed.svg",
