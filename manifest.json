@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Ymbed",
-  "version": "3.0",
+  "version": "4.0",
   "description": "A simple firefox extension that when on Youtube, if you click KeyE the current video playing will be fullscreened to the tab it's on.",
 
   "icons": {
@@ -11,8 +11,12 @@
 
   "content_scripts": [
     {
-      "matches": ["*://*.youtube.com/*"],
-      "js": ["script.js"]
+      "matches": ["*://*.youtube.com/watch*"],
+      "js": ["video-to-embed.js"]
+    },
+    {
+      "matches": ["*://*.youtube.com/embed/*"],
+      "js": ["embed-to-video.js"]
     }
   ]
 }
