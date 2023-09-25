@@ -1,4 +1,8 @@
 document.addEventListener('keydown', function(event) {
+    if (event.target.matches('input') || event.target.id.includes('contenteditable')) {
+        return;
+    }
+
     if(event.code == 'KeyE') {
         if (window.location.href.indexOf('watch') != -1) {
             const videoId = window.location.href.match(/(?<=(v=))[a-zA-Z0-9]+/)[0];
